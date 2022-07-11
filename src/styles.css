@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     }
+
+     h2{
+        
+        color: white;
+        background-color: #1D2671;
+        padding: 40px 0 40px 0;
+      
+     }
+     /* h5{
+        color: white;
+     } */
+     
+     .card{
+
+        background-color: black !important;
+        transition: 500ms;
+        color: white;
+        
+     }
+     .card:hover{
+        background-color: white !important;
+        color: black;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 500ms;
+     }
+
+
+     ul li{
+        background-color: #1D2671 !important;
+        color: white!important;
+     }
+
+
