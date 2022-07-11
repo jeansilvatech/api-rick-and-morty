@@ -23,5 +23,11 @@ personagens: Array<any> = [];
     })
     
   }
+  pagination(num){
+    this.listService.pagination(num).subscribe(result=>{
+      this.personagens=result.results
+       
+    })
+  }
 
 }

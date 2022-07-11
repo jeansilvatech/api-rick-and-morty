@@ -1,23 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+body { margin: 0; padding: 0; width: 100vw; font-family: Roboto, "Helvetica Neue", sans-serif;
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     }
+    overflow-x: hidden;
+   }
 
      h2{
         
         color: white;
         background-color: #1D2671;
         padding: 40px 0 40px 0;
+        width: 100vw;
       
      }
      /* h5{
         color: white;
      } */
-     
+     .container-home{
+      width: 100vw;
+     }
      .card{
 
         background-color: black !important;
@@ -32,8 +36,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
         opacity: 0.9;
         transition: 500ms;
      }
+     .buttons{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+     }
+     .btn{
+      background-color: #1D2671 !important;
+      color: white !important;
+      text-align: center !important;
+      font-size: 15px !important;
+      border: 1px solid white !important;
+      width: 35px;
+      margin: 1px;
+     }
+     .btn:hover{
+      background-color: #C33764 !important;
 
+     }
 
+     
      ul li{
         background-color: #1D2671 !important;
         color: white!important;

@@ -11,15 +11,18 @@ export type ApiResponse= {
   providedIn: 'root'
 })
 export class ListService {
-  page: number=1;
-  apiURL = `https://rickandmortyapi.com/api/character/?page=${this.page}`;
+  apiURL = `https://rickandmortyapi.com/api/character/`;
 
   constructor(private httpClient: HttpClient) {  }
 
   getList():Observable<any> {
     return this.httpClient.get<any>(this.apiURL)
   }
-  
+  pagination(num:number):Observable<any>{
+    let page = `?page=${num}`
+    let apiURL = this.apiURL
+    return this.httpClient.get<any>(apiURL+page)
+  }
 }
 
 
