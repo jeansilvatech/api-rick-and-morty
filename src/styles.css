@@ -60,5 +60,12 @@ body { margin: 0; padding: 0; width: 100vw; font-family: Roboto, "Helvetica Neue
         background-color: #1D2671 !important;
         color: white!important;
      }
-
+   @media(max-width:425px){
+   .buttons{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      flex-wrap: wrap;
+     }
+}
 
